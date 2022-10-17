@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fides</title>
+	<link href="http://fonts.cdnfonts.com/css/besttiny" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/font-awesome.min.css" />
+</head>
+<!-- 
+	cambiare icone to fontawesome
+	menu mobile con iconcine
+-->
+<body>
+	<header class="header">
+		<div class="bg"></div>
+		<div class="logo-main"></div>
+		<input type="text" name="search" placeholder="Search...">
+		<nav> 
+			<div class="shopping-bag">
+				<span class="checkout">1</span>
+				<div class="add-cart"></div>
+			</div>
+			<div class="flags">
+				<div class="flag flag-italy" id="FlagSelected" onclick="toggleMenu()"></div>
+				<div class="arrow" onclick="toggleMenu()"></div>
+				<div class="flag-overlay" id="FlagMenu">
+					<div class="flag-container" onclick="changeFlag('flag-italy')"><div class="flag flag-italy"></div><span>ITA</span></div>
+					<div class="flag-container" onclick="changeFlag('flag-eng')"><div class="flag flag-eng"></div><span>ENG</span></div>
+					<div class="flag-container" onclick="changeFlag('flag-fra')"><div class="flag flag-fra"></div><span>FRA</span></div>
+					<div class="flag-container" onclick="changeFlag('flag-cuba')"><div class="flag flag-cuba"></div><span>SPA</span></div>
+					<div class="flag-container"  style="margin:0 auto; padding: 2px 0 0 0; justify-content: center;"><i class="fa fa-bars" onclick="toggleMenu()" style="color: green;"></i></i></div>
+				</div>
+			</div>
+			<div id="menuIcon" class="mobile-menu-icon" onclick="openMenu()"></div>
+			<div id="MobileMenu" class="mobile-menu">
+				<ul>
+					<li><i class="mobile-item-icon fa fa-home fa-2x"></i><a href="/about">Home</a></li>
+					<li><i class="mobile-item-icon fa fa-list fa-2x"></i><a href="/about">About</a></li>
+					<li><i class="mobile-item-icon fa fa-handshake-o fa-2x" ></i><a href="/contact">Contact</a></li>
+				</ul>
+				<div class="login">
+					<h3>SignUp<i class="mobile-item-icon fa fa-user-o fa-1x"></i></h3>
+					<h3>Login<i class="mobile-item-icon fa fa-sign-in fa-1x"></i></h3>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="logo-container">
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo two">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Insalata</h2>
+				<br>
+				<h3>Antipasti</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star star-grey"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$10.99</span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio1">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio1">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio1">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo three">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Creme fraiche</h2>
+				<br>
+				<h3>Antipasti</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star star-grey"></div>
+					<div class="star star-grey"></div>
+					<div class="star star-grey"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$5.99  <del class="red">  $8.99</del></span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio2">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio2">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio2">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo four">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Bruschetta</h2>
+				<br>
+				<h3>Antipasti</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star star-grey"></div>
+					<div class="star star-grey"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$7.99</span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio3">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio3">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio3">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo five">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Egg Bruschetta</h2>
+				<br>
+				<h3>Antipasti</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star star-grey"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$12.99</span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio4">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio4">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio4">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo one">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Poke</h2>
+				<br>
+				<h3>Primi</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$7.99</span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio5">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio5">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio5">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div> 
+			<!-- *****************  PRODUCT  ***************** -->
+			<div class="card">
+				<div class="logo six">
+					<div class="logo-overlay">
+						<div class="cart"></div>
+						<div class="detail"></div>
+						<div class="fav"></div>
+					</div>
+				</div>
+				<h2>Insalata</h2>
+				<br>
+				<h3>Antipasti</h3>
+				<br>
+				<div class="star-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star star-grey"></div>
+				</div>
+				<div class="line">
+					<hr>
+				</div>
+				<span>$5.99</span>
+				<div class="item-details">
+					<div class="buttons">
+						<div class="button">
+							<div class="add-cart"></div>
+							<span>Add to Cart</span>
+						</div>
+						<div class="details-wrap">
+							<div class="button"> 
+								<div class="more-details"></div>
+								<span>Details</span>
+							</div>
+							<div class="button dark"> 
+								<div class="x"></div>
+							</div>
+						</div>
+					</div>
+					<div class="size">
+						<label class="container">Small
+						  <input type="radio" checked="checked" name="radio6">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Medium
+						  <input type="radio" name="radio6">
+						  <span class="checkmark"></span>
+						</label>
+						<label class="container">Large
+						  <input type="radio" name="radio6">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<h3>Get connected with us on social networks!</h3>
+			<div class="footer-logo-container">
+				<div class="footer-logo fb"></div>
+				<div class="footer-logo twitter"></div>
+				<div class="footer-logo insta"></div>
+				<div class="footer-logo linkedin"></div>
+			</div>
+	</footer>
+
+	<script type="text/javascript">
+
+		var mobileMenuIsOpen = false;
+		var mobileMenu = document.getElementById("MobileMenu");
+		var menuIcon = document.getElementById("menuIcon");
+
+		var flagMenuIsOpen = false;
+		var flagMenu = document.getElementById("FlagMenu");
+		var flagSelect = document.getElementById("FlagSelected");
+		var selectedFlag = flagSelect.classList.item(1);
+
+		function openMenu(){
+			mobileMenuIsOpen ? menuIcon.classList.remove("close-menu") : menuIcon.classList.add("close-menu");
+			!mobileMenuIsOpen ?  mobileMenu.classList.add("mobile-menu-open") : mobileMenu.classList.remove("mobile-menu-open") ;
+			mobileMenuIsOpen = !mobileMenuIsOpen;
+		}
+
+
+		function toggleMenu(){
+			flagMenuIsOpen ? flagMenu.classList.remove("flag-overlay-visible") : flagMenu.classList.add("flag-overlay-visible");
+			flagMenuIsOpen = !flagMenuIsOpen;
+		}
+
+
+		function changeFlag(x){
+			console.log(flagSelect)
+			flagSelect.classList.remove(selectedFlag);
+			flagSelect.classList.add(x);
+			selectedFlag = x;
+			toggleMenu();
+
+		}
+
+	</script>
+</body>
+</html>
